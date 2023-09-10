@@ -12,7 +12,7 @@ export default function Header() {
           <p className="text-green ml-52">EMRA</p>
         </div>
         <div className="header-right bg-green min-w-[30%]">
-          <p className="text-purple">DARK MODE</p>
+          <p className="text-purple text-left">DARK MODE</p>
         </div>
       </div>
 
