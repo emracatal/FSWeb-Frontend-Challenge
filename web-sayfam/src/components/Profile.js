@@ -11,7 +11,7 @@ export default function Profile() {
 
         <div className="profile-content flex mt-12 ml-72 mr-96">
           <div className="about-box text-2xl min-w-[30%]">
-            <p className="text-white text-2xl mb-4">Basic Information</p>{" "}
+            <p className="text-white text-2xl mb-4">Basic Information</p>
             <div className="about-box-detail flex">
               <div className="basic-left text-green min-w-fit mr-2">
                 <p className="text-lg mb-4">Doğum Tarihi</p>

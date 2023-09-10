@@ -7,7 +7,7 @@ module.exports = {
       white: "#FFF;",
       green: "#CBF281;",
       black: "rgba(119, 119, 119, 1)",
-      "black-dark": "rgba(18, 11, 57, 1)",
+      blackdark: "#120B39",
     },
   },
   plugins: [],

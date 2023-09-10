@@ -1,5 +1,13 @@
 import React from "react";
 
-export default function Projects() {
-  return <div className="text-green text-6xl ml-72 mr-48 mt-24">Projects</div>;
+export default function Project() {
+  return (
+    <>
+      <div className="bg-green">
+        <p className="text-purple text-6xl ml-72 mr-48 pt-24 font-bold">
+          Project
+        </p>
+      </div>
+    </>
+  );
 }
