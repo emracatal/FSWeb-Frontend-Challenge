@@ -9,8 +9,10 @@ import figma from "../assets/figma.png";
 export default function Skills() {
   return (
     <>
-      <div className="header flex">
-        <p className="text-purple text-5xl ml-72 mr-48 mt-12">Skills</p>
+      <div className="skills flex">
+        <p className="text-purple text-6xl ml-72 mr-48 mt-24 font-bold">
+          Skills
+        </p>
         <div>
           <img className="" src={js} alt="js"></img>
           <img className="-mt-32" src={react} alt="react"></img>

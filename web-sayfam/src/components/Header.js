@@ -15,7 +15,7 @@ export default function Header() {
             <span style={{ color: "#D9D9D9" }}>'YE GEÇ</span>
           </p>
 
-          <p className="text-green text-3xl ml-72">EMRA</p>
+          <p className="text-green text-3xl ml-72 font-bold">e m r a</p>
         </div>
         <div className="header-right bg-green min-w-[30%]">
           {/* <p className="text-purple text-xl text-left">DARK MODE</p> */}
@@ -45,10 +45,12 @@ export default function Header() {
 
       <div className="hero-content flex">
         <div className="hero-left bg-purple min-w-[70%] self-end ">
-          <p className="text-green text-6xl ml-72 mr-48 mt-24">
+          <p className="text-green text-6xl ml-72 mr-48 mt-24 font-bold">
             I am a Frontend
           </p>
-          <p className="text-green text-6xl ml-72 mr-48">Developer...</p>
+          <p className="text-green text-6xl ml-72 mr-48 font-bold">
+            Developer...
+          </p>
           <p className="text-white text-2xl ml-72 mr-48 mt-12">
             ...who likes to craft solid and scalable frontend products whith
             great user experiences
