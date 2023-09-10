@@ -1,10 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header";
+import Skills from "./components/Skills";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline text-purple">Hello world!</h1>
+      <Header />
+      <Skills />
     </div>
   );
 }
