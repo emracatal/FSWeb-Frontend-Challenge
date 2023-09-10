@@ -1,5 +1,9 @@
-@media (prefers-reduced-motion: no-preference) {
-
+@media (max-width: 768px) {
+  /* 768 piksel ekran genişliğine kadar olan ekranlar için stil değişikliği */
+  p {
+    clear: both; /* Paragrafın altına geçiş yapması için float'ı temizler */
+    margin-top: 10px; /* İstenilen boşluk miktarı */
+  }
 }
 
 @keyframes App-logo-spin {
