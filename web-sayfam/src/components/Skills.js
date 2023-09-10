@@ -1,18 +1,27 @@
 import React from "react";
-import jslogo1 from "../assets/jslogo1.png";
-import Rectangle35 from "../assets/Rectangle35.png";
-import Rectangle33 from "../assets/Rectangle33.png";
+import js from "../assets/js.png";
+import react from "../assets/react.png";
+import redux from "../assets/redux.png";
+import node from "../assets/node.png";
+import vsCode from "../assets/vsCode.png";
+import figma from "../assets/figma.png";
 
 export default function Skills() {
   return (
     <>
-      <p className="text-purple text-5xl ml-72 mr-48 mt-12">Skills</p>
-      <img className="" src={jslogo1} alt="jslogo1"></img>
-      <p className="text-purple">JAVASCRIPT</p>
-      <img className="" src={Rectangle35} alt="Rectangle35"></img>
-      <p className="text-purple">JAVASCRIPT</p>
-      <img className="" src={Rectangle33} alt="Rectangle33"></img>
-      <p className="text-purple">JAVASCRIPT</p>
+      <div className="header flex">
+        <p className="text-purple text-5xl ml-72 mr-48 mt-12">Skills</p>
+        <div>
+          <img className="" src={js} alt="js"></img>
+          <img className="-mt-32" src={react} alt="react"></img>
+          <img className="-mt-32" src={node} alt="node"></img>
+        </div>
+        <div>
+          <img className="" src={vsCode} alt="vsCode"></img>
+          <img className="-mt-32" src={redux} alt="redux"></img>
+          <img className="-mt-32" src={figma} alt="figma"></img>
+        </div>
+      </div>
     </>
   );
 }

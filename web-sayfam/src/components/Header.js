@@ -63,14 +63,14 @@ export default function Header() {
               <p className="text-purple">Linkedin</p>
             </button>
           </div> */}
-          <div className="buttons flex ml-72 mb-24 mt-4 gap-2">
+          <div className="buttons flex ml-72 mb-24 mt-4 gap-4 mr-48">
             <button className="bg-white rounded flex p-2">
               <img className="p-2" src={github} alt="github"></img>
-              <p className="text-purple text-xl p-3">Github</p>
+              <p className="text-purple text-xl p-2">Github</p>
             </button>
             <button className="bg-white rounded flex p-2">
               <img className="p-2" src={linkedin} alt="linkedin"></img>
-              <p className="text-purple text-xl p-3">Linkedin</p>
+              <p className="text-purple text-xl p-2">Linkedin</p>
             </button>
           </div>
         </div>
