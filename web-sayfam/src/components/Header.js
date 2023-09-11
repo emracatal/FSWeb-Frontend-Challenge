@@ -11,8 +11,8 @@ export default function Header({ darkModeHandler }) {
           {/* <p className="text-green text-xl text-right mt-8">TÜRKÇEYE GEÇ</p> */}
 
           <p className="text-green text-xl text-right mt-8 cursor-pointer mr-8">
-            <span className="text-green">TÜRKÇE</span>{" "}
-            <span style={{ color: "#D9D9D9" }}>'YE GEÇ</span>
+            <span className="text-green dark:text-BAB2E7">TÜRKÇE</span>{" "}
+            <span className="text-d9">'YE GEÇ</span>
           </p>
 
           <p className="text-green text-3xl ml-72 font-bold">e m r a</p>
@@ -23,9 +23,8 @@ export default function Header({ darkModeHandler }) {
               className="flex flex-row gap-2 w-full items-center mt-8 ml-8 cursor-pointer"
               id="NightModeRoot"
             >
-              <div className="bg-[#8f88ff] self-start flex flex-row justify-end w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
-                <div
-                                    className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]"
+              <div className="bg-[#8f88ff] dark:bg-A3A3A3 self-start flex flex-row justify-end w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
+                <div className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]"
                   id="Ellipse"
                 />
                 <div
@@ -33,7 +32,7 @@ export default function Header({ darkModeHandler }) {
                   id="Ellipse1"
                 />
               </div>
-              <div onClick={() => darkModeHandler()} className="text-xl tracking-[1.5] text-[#4731d3] font-bold">
+              <div onClick={() => darkModeHandler()} className="text-xl tracking-[1.5] text-[#4731d3] dark:text-d9 dark:font-normal font-bold">
                 DARK MODE
               </div>
             </div>
