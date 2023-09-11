@@ -4,7 +4,7 @@ import image2 from "../assets/image2.png";
 export default function Profile() {
   return (
     <>
-      <div className="bg-purple">
+      <div className="bg-purple dark:bg-purpledarkmode">
         <p className="text-green text-6xl ml-72 mr-48 pt-24 font-bold">
           Profile
         </p>

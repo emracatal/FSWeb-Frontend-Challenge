@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import github from "../assets/github.png";
-import linkedin from "../assets/github.png";
+import Linkedin from "../assets/Linkedin.png";
+import Linkedindark from "../assets/Linkedindark.png";
+import githubdark from "../assets/githubdark.png";
 import heroright from "../assets/heroright.png";
 import { websiteContext } from "../contexts/webSiteContext.js";
 
@@ -27,7 +29,7 @@ export default function Header() {
             >
               <div
                 onClick={darkModeHandler}
-                className="bg-[#8f88ff] dark:bg-A3A3A3 self-start flex flex-row justify-end w-12 shrink-0 h-6 items-center px-1 rounded-[100px]"
+                className="bg-[#8f88ff] dark:bg-A3A3A3 self-start flex flex-row justify-end dark:justify-start w-12 shrink-0 h-6 items-center px-1 rounded-[100px]"
               >
                 <div
                   className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]"
@@ -60,11 +62,11 @@ export default function Header() {
           </p>
           <div className="buttons flex ml-72 mb-24 mt-4 gap-4 mr-48">
             <button className="bg-white dark:bg-whitedarkmode dark:border-solid dark:border-2 dark:border-white rounded flex p-2">
-              <img className="p-2 " src={github} alt="github"></img>
+            <img className="p-2" src={darkMode ? githubdark : github} alt='github-light'></img>
               <p className="text-purple dark:text-white text-xl p-2">Github</p>
             </button>
             <button className="bg-white dark:bg-whitedarkmode dark:border-solid dark:border-2 dark:border-white rounded flex p-2">
-              <img className="p-2" src={linkedin} alt="linkedin"></img>
+            <img className="p-2" src={darkMode ? Linkedindark : Linkedin} alt='LinkedinLight'></img>
               <p className="text-purple dark:text-white  text-xl p-2">
                 Linkedin
               </p>
