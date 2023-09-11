@@ -3,11 +3,11 @@ import github from "../assets/github.png";
 import linkedin from "../assets/github.png";
 import heroright from "../assets/heroright.png";
 
-export default function Header() {
+export default function Header({ darkModeHandler }) {
   return (
     <>
       <div className="header flex">
-        <div className="header-left bg-purple min-w-[70%]">
+        <div className="header-left bg-purple dark:bg-purpledarkmode min-w-[70%]">
           {/* <p className="text-green text-xl text-right mt-8">TÜRKÇEYE GEÇ</p> */}
 
           <p className="text-green text-xl text-right mt-8 cursor-pointer mr-8">
@@ -17,17 +17,15 @@ export default function Header() {
 
           <p className="text-green text-3xl ml-72 font-bold">e m r a</p>
         </div>
-        <div className="header-right bg-green min-w-[30%]">
-          {/* <p className="text-purple text-xl text-left">DARK MODE</p> */}
-
-          <div className="DARKMODE bg-green">
+        <div className="header-right bg-green dark:bg-greendarkmode min-w-[30%]">
+          <div className="darkmode bg-green dark:bg-greendarkmode">
             <div
               className="flex flex-row gap-2 w-full items-center mt-8 ml-8 cursor-pointer"
               id="NightModeRoot"
             >
               <div className="bg-[#8f88ff] self-start flex flex-row justify-end w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
                 <div
-                  className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]"
+                                    className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]"
                   id="Ellipse"
                 />
                 <div
@@ -35,7 +33,7 @@ export default function Header() {
                   id="Ellipse1"
                 />
               </div>
-              <div className="text-xl tracking-[1.5] text-[#4731d3] font-bold">
+              <div onClick={() => darkModeHandler()} className="text-xl tracking-[1.5] text-[#4731d3] font-bold">
                 DARK MODE
               </div>
             </div>
@@ -44,7 +42,7 @@ export default function Header() {
       </div>
 
       <div className="hero-content flex">
-        <div className="hero-left bg-purple min-w-[70%] self-end ">
+        <div className="hero-left bg-purple dark:bg-purpledarkmode min-w-[70%] self-end ">
           <p className="text-green text-6xl ml-72 mr-48 mt-24 font-bold">
             I am a Frontend
           </p>
@@ -55,29 +53,19 @@ export default function Header() {
             ...who likes to craft solid and scalable frontend products whith
             great user experiences
           </p>
-          {/* <div className="buttons flex gap-2 ml-72 mt-12 mb-24 mr-48">
-            <button className="bg-white rounded flex">
-              <img src={github} alt="github"></img>
-              <p className="text-purple">Github</p>
-            </button>
-            <button className="bg-white rounded flex">
-              <img src={linkedin} alt="linkedin"></img>
-              <p className="text-purple">Linkedin</p>
-            </button>
-          </div> */}
           <div className="buttons flex ml-72 mb-24 mt-4 gap-4 mr-48">
-            <button className="bg-white rounded flex p-2">
-              <img className="p-2" src={github} alt="github"></img>
-              <p className="text-purple text-xl p-2">Github</p>
+            <button className="bg-white dark:bg-whitedarkmode dark:border-solid dark:border-2 dark:border-white rounded flex p-2">
+              <img className="p-2 "  src={github} alt="github"></img>
+              <p className="text-purple dark:text-white text-xl p-2">Github</p>
             </button>
-            <button className="bg-white rounded flex p-2">
+            <button className="bg-white dark:bg-whitedarkmode dark:border-solid dark:border-2 dark:border-white rounded flex p-2">
               <img className="p-2" src={linkedin} alt="linkedin"></img>
-              <p className="text-purple text-xl p-2">Linkedin</p>
+              <p className="text-purple dark:text-white  text-xl p-2">Linkedin</p>
             </button>
           </div>
         </div>
 
-        <div className="hero-right bg-green min-w-[30%]">
+        <div className="hero-right bg-green dark:bg-greendarkmode min-w-[30%]">
           <img
             className="-ml-64 absolute"
             src={heroright}

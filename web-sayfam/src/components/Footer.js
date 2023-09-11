@@ -7,14 +7,15 @@ import instagram from "../assets/instagram.png";
 export default function Footer() {
   return (
     <>
-      <div className="footer-content ml-96 mr-96">
+          <div className="footer bg-white dark:bg-whitedarkmode flex">
+      <div className="footer-content bg-white dark:bg-whitedarkmode ml-96 mr-96">
         <p className="text-purple text-5xl text-center mt-24 mb-6 font-bold">
           Send me a message!
         </p>
-        <p className="text-black text-xl text-center mb-6 font-bold">
+        <p className="text-black dark:text-white text-xl text-center mb-6 font-bold">
           Got a question or proposal, or just want to say hello? Go ahead.
         </p>
-        <p className="text-black text-xl text-center mb-6 font-bold">
+        <p className="text-black dark:text-purple text-xl text-center mb-6 font-bold">
           emracatal@gmail.com
         </p>
         <div className="flex justify-center">
@@ -23,6 +24,7 @@ export default function Footer() {
           <img className="" src={atsign} alt="atsign"></img>
           <img className="" src={instagram} alt="instagram"></img>
         </div>
+      </div>
       </div>
     </>
   );

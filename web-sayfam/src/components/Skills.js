@@ -9,8 +9,8 @@ import figma from "../assets/figma.png";
 export default function Skills() {
   return (
     <>
-      <div className="skills flex">
-        <p className="text-purple text-6xl ml-72 mr-48 mt-24 font-bold">
+      <div className="skills bg-white dark:bg-whitedarkmode flex">
+        <p className="text-purple dark:text-green text-6xl ml-72 mr-48 mt-24 font-bold">
           Skills
         </p>
         <div>
