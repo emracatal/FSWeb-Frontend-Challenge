@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import github from "../assets/github.png";
 import linkedin from "../assets/github.png";
 import heroright from "../assets/heroright.png";
+import { websiteContext } from "../contexts/webSiteContext.js";
 
-export default function Header({ darkModeHandler }) {
+export default function Header() {
+  const { language, setLanguage, darkModeHandler, darkMode } = useContext(websiteContext)
   return (
     <>
       <div className="header flex">
@@ -23,8 +25,12 @@ export default function Header({ darkModeHandler }) {
               className="flex flex-row gap-2 w-full items-center mt-8 ml-8 cursor-pointer"
               id="NightModeRoot"
             >
-              <div className="bg-[#8f88ff] dark:bg-A3A3A3 self-start flex flex-row justify-end w-12 shrink-0 h-6 items-center px-1 rounded-[100px]">
-                <div className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]"
+              <div
+                onClick={darkModeHandler}
+                className="bg-[#8f88ff] dark:bg-A3A3A3 self-start flex flex-row justify-end w-12 shrink-0 h-6 items-center px-1 rounded-[100px]"
+              >
+                <div
+                  className="bg-[#ffe86e] w-4 shrink-0 h-4 rounded-[50%]"
                   id="Ellipse"
                 />
                 <div
@@ -32,7 +38,7 @@ export default function Header({ darkModeHandler }) {
                   id="Ellipse1"
                 />
               </div>
-              <div onClick={() => darkModeHandler()} className="text-xl tracking-[1.5] text-[#4731d3] dark:text-d9 dark:font-normal font-bold">
+              <div className="text-xl tracking-[1.5] text-[#4731d3] dark:text-d9 dark:font-normal font-bold">
                 DARK MODE
               </div>
             </div>
@@ -54,12 +60,14 @@ export default function Header({ darkModeHandler }) {
           </p>
           <div className="buttons flex ml-72 mb-24 mt-4 gap-4 mr-48">
             <button className="bg-white dark:bg-whitedarkmode dark:border-solid dark:border-2 dark:border-white rounded flex p-2">
-              <img className="p-2 "  src={github} alt="github"></img>
+              <img className="p-2 " src={github} alt="github"></img>
               <p className="text-purple dark:text-white text-xl p-2">Github</p>
             </button>
             <button className="bg-white dark:bg-whitedarkmode dark:border-solid dark:border-2 dark:border-white rounded flex p-2">
               <img className="p-2" src={linkedin} alt="linkedin"></img>
-              <p className="text-purple dark:text-white  text-xl p-2">Linkedin</p>
+              <p className="text-purple dark:text-white  text-xl p-2">
+                Linkedin
+              </p>
             </button>
           </div>
         </div>
