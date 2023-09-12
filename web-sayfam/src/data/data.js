@@ -5,8 +5,8 @@ const data = {
             lang:"ENGLISH",
             name: "e m r a",
             darkmode: "KOYU MOD",
-            title: "Ben Bir Fullstack",
-            title2:"Developerım...",
+            title: "Ben bir FrontEnd",
+            title2:"Geliştiricisiyim...",
             description: "...mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir ürünleri oluşturmayı seven.",
             
         },
