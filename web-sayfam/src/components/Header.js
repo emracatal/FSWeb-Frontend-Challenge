@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import github from "../assets/github.png";
 import Linkedin from "../assets/Linkedin.png";
 import Linkedindark from "../assets/Linkedindark.png";
@@ -6,9 +6,13 @@ import githubdark from "../assets/githubdark.png";
 import heroright from "../assets/heroright.png";
 import { websiteContext } from "../contexts/webSiteContext.js";
 import data from '../data/data'
+import axios from "axios"
 
 export default function Header() {
-  const { language , languageHandler, darkModeHandler, darkMode } = useContext(websiteContext)
+  const { language , languageHandler, darkModeHandler, darkMode ,avatar} = useContext(websiteContext)
+
+  
+
   return (
     <>
       <div className="header flex">
@@ -75,7 +79,7 @@ export default function Header() {
         <div className="hero-right bg-green dark:bg-greendarkmode min-w-[30%]">
           <img
             className="-ml-64 absolute"
-            src={heroright}
+            src={avatar}
             alt="heroright"
           ></img>
         </div>

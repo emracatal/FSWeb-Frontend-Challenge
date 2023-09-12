@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
+import axios from "axios"
 
 export const websiteContext = createContext()
 
@@ -36,10 +37,21 @@ const WebSiteProvider = ({ children }) => {
           setLanguage(language === "tr" ? "en" : "tr");
           localStorage.setItem("language", language === "tr" ? "en" : "tr");
         }
-
-
+     
+        const [avatar, setAvatar] = useState(""); 
+        useEffect(() => {
+              axios
+            .get("https://reqres.in/api/users")
+            .then((response) => {
+              setAvatar(response.data.data[1].avatar); 
+              console.log(response.data.data[1].avatar)
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+        }, []);
   return (
-    <websiteContext.Provider value={{ language, languageHandler, darkModeHandler, darkMode }}>{children}</websiteContext.Provider>
+    <websiteContext.Provider value={{ language, languageHandler, darkModeHandler, darkMode,avatar  }}>{children}</websiteContext.Provider>
   )
 }
 
