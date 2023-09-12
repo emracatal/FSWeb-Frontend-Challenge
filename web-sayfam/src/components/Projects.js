@@ -1,4 +1,5 @@
 import React from "react";
+import { websiteContext } from "../contexts/webSiteContext.js";
 
 export default function Projects() {
   return (

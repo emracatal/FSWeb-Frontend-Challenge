@@ -5,6 +5,7 @@ import redux from "../assets/redux.png";
 import node from "../assets/node.png";
 import vsCode from "../assets/vsCode.png";
 import figma from "../assets/figma.png";
+import { websiteContext } from "../contexts/webSiteContext.js";
 
 export default function Skills() {
   return (

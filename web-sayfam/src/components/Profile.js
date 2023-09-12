@@ -1,5 +1,7 @@
 import React from "react";
 import image2 from "../assets/image2.png";
+import { websiteContext } from "../contexts/webSiteContext.js";
+
 
 export default function Profile() {
   return (
