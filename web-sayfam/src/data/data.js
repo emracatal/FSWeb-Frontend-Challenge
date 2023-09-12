@@ -1,12 +1,14 @@
 const data = {
     tr: {
         header: {
-            name: "emra",
+            to:"TO",
+            lang:"ENGLISH",
+            name: "e m r a",
+            darkmode: "KOYU MOD",
             title: "Ben Bir Fullstack",
             title2:"Developerım...",
             description: "...mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir ürünleri oluşturmayı seven.",
-            to:"TO",
-            languageSwitch:"ENGLISH"
+            
         },
         skills: {
             skils: "Yetenekler",
@@ -16,12 +18,13 @@ const data = {
             title: "Genel Bilgilerim",
             birthday: "Doğum Tarihi",
             city: "İkamet Şehri",
-            graduatedFrom: "Eğitim Durumu",
+            graduatedFrom: "Eğitim ",
+            graduatedFrom2: "Durumu",
             role: "Tercih Ettiği Rol",
-            response: {
+            detail: {
                 birthday: "21.03.1984",
                 city: "İstanbul",
-                graduatedFrom: "Sakarya Üni. Endüstri Müh.",
+                graduatedFrom: "Sakarya Üni.Endüstri Müh.",
                 graduatedFrom2: "Lisans 2004",
                 role: "Frontend, UI"
             },
@@ -41,12 +44,14 @@ const data = {
 
     en: {
         header: {
-            name: "emra",
+            to:"TÜRKÇE",
+            lang:"'YE GEÇ",
+            name: "e m r a",
+            darkmode: "DARK MODE",
             title: "I am a Frontend",
             title2:"Developer...",
             description: "...who likes to craft solid and scalable frontend products with great user experiences.",
-            to:"TÜRKÇE",
-            languageSwitch:"'YE GEÇ"
+
         },
         skills: {
             skils: "Skills",
@@ -58,10 +63,10 @@ const data = {
             city: "City",
             graduatedFrom: "Educational Background",
             role: "Preferred Role",
-            response: {
+            detail: {
                 birthday: "21.03.1984",
                 city: "İstanbul",
-                graduatedFrom: "Sakarya Uni. Endustrial Engineering, 2004",
+                graduatedFrom: "Sakarya Uni. Endustrial Eng. 2004",
                 role: "Frontend, UI"
             },
             aboutMe: "About Me",

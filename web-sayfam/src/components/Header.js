@@ -5,21 +5,22 @@ import Linkedindark from "../assets/Linkedindark.png";
 import githubdark from "../assets/githubdark.png";
 import heroright from "../assets/heroright.png";
 import { websiteContext } from "../contexts/webSiteContext.js";
+import data from '../data/data'
 
 export default function Header() {
-  const { language, setLanguage, darkModeHandler, darkMode } = useContext(websiteContext)
+  const { language , languageHandler, darkModeHandler, darkMode } = useContext(websiteContext)
   return (
     <>
       <div className="header flex">
         <div className="header-left bg-purple dark:bg-purpledarkmode min-w-[70%]">
           {/* <p className="text-green text-xl text-right mt-8">TÜRKÇEYE GEÇ</p> */}
 
-          <p className="text-green text-xl text-right mt-8 cursor-pointer mr-8">
-            <span className="text-green dark:text-BAB2E7">TÜRKÇE</span>{" "}
-            <span className="text-d9">'YE GEÇ</span>
+          <p  onClick={languageHandler} className="text-green text-xl text-right mt-8 cursor-pointer mr-8">
+            <span className="text-green dark:text-BAB2E7">{data[language].header.to}</span>{" "}
+            <span className="text-d9">{data[language].header.lang}</span>
           </p>
 
-          <p className="text-green text-3xl ml-72 font-bold">e m r a</p>
+          <p className="text-green text-3xl ml-72 font-bold">{data[language].header.name}</p>
         </div>
         <div className="header-right bg-green dark:bg-greendarkmode min-w-[30%]">
           <div className="darkmode bg-green dark:bg-greendarkmode">
@@ -41,7 +42,7 @@ export default function Header() {
                 />
               </div>
               <div className="text-xl tracking-[1.5] text-[#4731d3] dark:text-d9 dark:font-normal font-bold">
-                DARK MODE
+                {data[language].header.darkmode}
               </div>
             </div>
           </div>
@@ -51,14 +52,11 @@ export default function Header() {
       <div className="hero-content flex">
         <div className="hero-left bg-purple dark:bg-purpledarkmode min-w-[70%] self-end ">
           <p className="text-green text-6xl ml-72 mr-48 mt-24 font-bold">
-            I am a Frontend
-          </p>
+          {data[language].header.title}          </p>
           <p className="text-green text-6xl ml-72 mr-48 font-bold">
-            Developer...
-          </p>
+          {data[language].header.title2}          </p>
           <p className="text-white text-2xl ml-72 mr-48 mt-12">
-            ...who likes to craft solid and scalable frontend products whith
-            great user experiences
+          {data[language].header.description}  
           </p>
           <div className="buttons flex ml-72 mb-24 mt-4 gap-4 mr-48">
             <button className="bg-white dark:bg-whitedarkmode dark:border-solid dark:border-2 dark:border-white rounded flex p-2">

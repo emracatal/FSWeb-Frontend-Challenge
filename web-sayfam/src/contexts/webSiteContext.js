@@ -8,8 +8,10 @@ const WebSiteProvider = ({ children }) => {
     const darkModeHandler = () => {
         document.body.classList.toggle("dark", !darkMode)
         setDarkMode(!darkMode)
+        localStorage.setItem("darkMode", !darkMode);
       }
-  
+
+
     useEffect(() => {
       const initialDarkMode = window.matchMedia(
         "(prefers-color-scheme: dark)"
@@ -27,6 +29,18 @@ const WebSiteProvider = ({ children }) => {
           }
         });
     }, []);
+
+    const [language, setLanguage] = useState("tr")
+  
+        const languageHandler = () => {
+          setLanguage(language === "tr" ? "en" : "tr");
+          localStorage.setItem("language", language === "tr" ? "en" : "tr");
+        }
+
+
+    
+
+
 //   const darkModeHandler = () => {
 //     document.body.classList.toggle("dark", !darkMode)
 //     setDarkMode(!darkMode)
@@ -64,7 +78,7 @@ const WebSiteProvider = ({ children }) => {
 //   const [language, setLanguage] = useState(localStorage.getItem("language") ? localStorage.getItem("language") : "en")
 
   return (
-    <websiteContext.Provider value={{ darkModeHandler }}>{children}</websiteContext.Provider>
+    <websiteContext.Provider value={{ language, languageHandler, darkModeHandler, darkMode }}>{children}</websiteContext.Provider>
   )
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from 'react'
 import js from "../assets/js.png";
 import react from "../assets/react.png";
 import redux from "../assets/redux.png";
@@ -6,13 +6,16 @@ import node from "../assets/node.png";
 import vsCode from "../assets/vsCode.png";
 import figma from "../assets/figma.png";
 import { websiteContext } from "../contexts/webSiteContext.js";
+import data from '../data/data'
 
 export default function Skills() {
+  const { language, setLanguage, darkModeHandler, darkMode } = useContext(websiteContext)
+
   return (
     <>
       <div className="skills bg-white dark:bg-whitedarkmode flex">
         <p className="text-purple dark:text-green text-6xl ml-72 mr-48 mt-24 font-bold">
-          Skills
+        {data[language].skills.skills}
         </p>
         <div>
           <img className="" src={js} alt="js"></img>
