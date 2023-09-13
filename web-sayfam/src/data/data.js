@@ -11,7 +11,7 @@ const data = {
             
         },
         skills: {
-            skils: "Yetenekler",
+            skills: "Yetenekler",
         },
         profile: {
             profile: "Profil Bilgilerim",
@@ -54,7 +54,7 @@ const data = {
 
         },
         skills: {
-            skils: "Skills",
+            skills: "Skills",
         },
         profile: {
             profile: "Profile",
