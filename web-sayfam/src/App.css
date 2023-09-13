@@ -1,16 +1,13 @@
+
 @media (max-width: 768px) {
   /* 768 piksel ekran genişliğine kadar olan ekranlar için stil değişikliği */
-  p {
+  .p {
     clear: both; /* Paragrafın altına geçiş yapması için float'ı temizler */
     margin-top: 10px; /* İstenilen boşluk miktarı */
   }
+
+.skills {
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

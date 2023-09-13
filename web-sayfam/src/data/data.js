@@ -22,7 +22,7 @@ const data = {
             graduatedFrom2: "Durumu",
             role: "Tercih Ettiği Rol",
             detail: {
-                birthday: "21.03.1984",
+                birthday: "26.10.1984",
                 city: "İstanbul",
                 graduatedFrom: "Sakarya Üni.Endüstri Müh.",
                 graduatedFrom2: "Lisans 2004",
@@ -34,6 +34,10 @@ const data = {
         projects: {
             title: "Projelerim",
             visit:"Siteyi Görüntüle",
+            project1title:"Workintech",
+            project1description:"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulum çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
+            project2title:"Journey",
+            project2description:"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulum çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar."
         },
         footer:{
             title:"Bana mesaj gönderin!",
@@ -61,12 +65,14 @@ const data = {
             title: "Basic Information",
             birthday: "Birthday",
             city: "City",
-            graduatedFrom: "Educational Background",
+            graduatedFrom: "Educational",
+            graduatedFrom2: "Background",
             role: "Preferred Role",
             detail: {
-                birthday: "21.03.1984",
+                birthday: "26.10.1984",
                 city: "İstanbul",
-                graduatedFrom: "Sakarya Uni. Endustrial Eng. 2004",
+                graduatedFrom: "Sakarya Uni. Endustrial Eng.",
+                graduatedFrom2: "Lisans 2004",
                 role: "Frontend, UI"
             },
             aboutMe: "About Me",
@@ -75,6 +81,11 @@ const data = {
         projects: {
             title: "Projects",
             visit:"View Site",
+            project1title:"Workintech",
+            project1description:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            project2title:"Journey",
+            project2description:"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulum çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar."
+
         },
         footer:{
             title:"Send me a message!",

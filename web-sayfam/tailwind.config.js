@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     colors: {
       purple: "#4731D3;",
+      softpurple:"#8173DA",
       purpledarkmode: "#171043;",
       white: "#FFF;",
       whitedarkmode: "#252128;",
@@ -14,7 +15,9 @@ module.exports = {
       blackdark: "#120B39",
       d9:"#D9D9D9",
       BAB2E7:"#BAB2E7;",
-      A3A3A3:"#3A3A3A;"
+      A3A3A3:"#3A3A3A;",
+      C1BAED:"#C1BAED",
+      B27272:"#2B2727",
     },
   },
   plugins: [],
