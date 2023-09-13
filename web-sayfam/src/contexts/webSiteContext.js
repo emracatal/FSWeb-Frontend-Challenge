@@ -39,17 +39,17 @@ const WebSiteProvider = ({ children }) => {
         }
      
         const [avatar, setAvatar] = useState(""); 
-        useEffect(() => {
-              axios
-            .get("https://reqres.in/api/users")
-            .then((response) => {
-              setAvatar(response.data.data[1].avatar); 
-              console.log(response.data.data[1].avatar)
-            })
-            .catch((error) => {
-              console.error(error);
-            });
-        }, []);
+        // useEffect(() => {
+        //       axios
+        //     .get("https://reqres.in/api/users/1")
+        //     .then((response) => {
+        //       setAvatar(response.data.data.avatar); 
+        //       console.log(response.data.data.avatar)
+        //     })
+        //     .catch((error) => {
+        //       console.error(error);
+        //     });
+        // }, []);
   return (
     <websiteContext.Provider value={{ language, languageHandler, darkModeHandler, darkMode,avatar  }}>{children}</websiteContext.Provider>
   )

@@ -79,7 +79,7 @@ export default function Header() {
         <div className="hero-right bg-green dark:bg-greendarkmode min-w-[30%]">
           <img
             className="-ml-64 absolute"
-            src={avatar}
+            src={heroright}
             alt="heroright"
           ></img>
         </div>
