@@ -6,11 +6,7 @@
   min-width: 100vh;
 }
 
-/* axios'dan gelen img için düzenleme yapmak için açmıştım ama doğru çalışmadı
-.header .img{
-  width: 519px;
-  height: 544px;
-} */
+
 
 @layer base {
   html {
