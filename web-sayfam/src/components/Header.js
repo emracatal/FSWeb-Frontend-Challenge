@@ -9,7 +9,7 @@ import data from "../data/data";
 import axios from "axios";
 
 export default function Header() {
-  const { language, languageHandler, darkModeHandler, darkMode, avatar } =
+  const { language, languageHandler, darkModeHandler, darkMode } =
     useContext(websiteContext);
 
   return (

@@ -5,7 +5,7 @@ import rectangle41 from "../assets/rectangle41.png";
 import rectangle42 from "../assets/rectangle42.png";
 
 export default function Projects() {
-  const { language, setLanguage, darkModeHandler, darkMode } =
+  const { language } =
     useContext(websiteContext);
 
   return (

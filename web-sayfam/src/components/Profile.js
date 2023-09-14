@@ -4,7 +4,7 @@ import { websiteContext } from "../contexts/webSiteContext.js";
 import data from "../data/data";
 
 export default function Profile() {
-  const { language, setLanguage, darkModeHandler, darkMode } =
+  const { language } =
     useContext(websiteContext);
 
   return (
