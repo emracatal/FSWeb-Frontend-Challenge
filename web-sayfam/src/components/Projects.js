@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { websiteContext } from "../contexts/webSiteContext.js";
 import data from "../data/data";
-import Rectangle41 from "../assets/Rectangle41.png";
-import Rectangle42 from "../assets/Rectangle42.png";
+import rectangle41 from "../assets/rectangle41.png";
+import rectangle42 from "../assets/rectangle42.png";
 
 export default function Projects() {
   const { language, setLanguage, darkModeHandler, darkMode } =
@@ -18,15 +18,15 @@ export default function Projects() {
         <div className="projects1 flex mb-8 ">
           <img
             className="projects1-left"
-            src={Rectangle41}
-            alt="Rectangle41"
+            src={rectangle41}
+            alt="rectangle41"
           ></img>
           <div className="projects1-right flex flex-col justify-center px-8 gap-6 text-white bg-white dark:bg-B27272">
             <p className="text-2xl font-bold text-purple dark:text-C1BAED">
-            {data[language].projects.project1title}
+              {data[language].projects.project1title}
             </p>
             <p className="text-base text-black dark:text-white">
-            {data[language].projects.project1description}
+              {data[language].projects.project1description}
             </p>
             <div className="pills text-white">
               <button className="rounded-full bg-purple dark:bg-softpurple text-white py-2 px-5 mr-2">
@@ -51,15 +51,15 @@ export default function Projects() {
         <div className="projects2 flex ">
           <img
             className="projects2-left"
-            src={Rectangle42}
-            alt="Rectangle42"
+            src={rectangle42}
+            alt="rectangle42"
           ></img>
           <div className="projects2-right flex flex-col justify-center px-8 gap-6 text-white bg-white dark:bg-B27272">
             <p className="text-2xl font-bold text-purple dark:text-C1BAED">
-            {data[language].projects.project2title}
+              {data[language].projects.project2title}
             </p>
             <p className="text-base text-black dark:text-white">
-            {data[language].projects.project2description}
+              {data[language].projects.project2description}
             </p>
             <div className="pills text-white">
               <button className="rounded-full bg-purple dark:bg-softpurple text-white py-2 px-5 mr-2">
