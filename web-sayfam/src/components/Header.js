@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.png";
-import linkedindark from "../assets/linkedindark.png";
+import Linkedin from "../assets/Linkedin.png";
+import Linkedindark from "../assets/Linkedindark.png";
 import githubdark from "../assets/githubdark.png";
 import heroright from "../assets/heroright.png";
 import { websiteContext } from "../contexts/webSiteContext.js";
@@ -80,11 +80,11 @@ export default function Header() {
             <button className="bg-white dark:bg-whitedarkmode dark:border-solid dark:border-2 dark:border-white rounded flex p-2">
               <img
                 className="p-2"
-                src={darkMode ? linkedindark : linkedin}
-                alt="linkedinLight"
+                src={darkMode ? Linkedindark : Linkedin}
+                alt="LinkedinLight"
               ></img>
               <p className="text-purple dark:text-white  text-xl p-2">
-                linkedin
+                Linkedin
               </p>
             </button>
           </div>

@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
 import { websiteContext } from "../contexts/webSiteContext.js";
 import data from "../data/data";
-import rectangle41 from "../assets/rectangle41.png";
-import rectangle42 from "../assets/rectangle42.png";
+import Rectangle41 from "../assets/Rectangle41.png";
+import Rectangle42 from "../assets/Rectangle42.png";
 
 export default function Projects() {
-  const { language } =
-    useContext(websiteContext);
+  const { language } = useContext(websiteContext);
 
   return (
     <>
@@ -18,8 +17,8 @@ export default function Projects() {
         <div className="projects1 flex mb-8 ">
           <img
             className="projects1-left"
-            src={rectangle41}
-            alt="rectangle41"
+            src={Rectangle41}
+            alt="Rectangle41"
           ></img>
           <div className="projects1-right flex flex-col justify-center px-8 gap-6 text-white bg-white dark:bg-B27272">
             <p className="text-2xl font-bold text-purple dark:text-C1BAED">
@@ -51,8 +50,8 @@ export default function Projects() {
         <div className="projects2 flex ">
           <img
             className="projects2-left"
-            src={rectangle42}
-            alt="rectangle42"
+            src={Rectangle42}
+            alt="Rectangle42"
           ></img>
           <div className="projects2-right flex flex-col justify-center px-8 gap-6 text-white bg-white dark:bg-B27272">
             <p className="text-2xl font-bold text-purple dark:text-C1BAED">
