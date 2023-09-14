@@ -18,12 +18,12 @@ export default function Skills() {
         <p className="skills1 text-purple dark:text-green text-6xl  font-bold  ">
           {data[language].skills.skills}
         </p>
-        <div classname="skills2">
+        <div className="skills2">
           <img className="" src={js} alt="js"></img>
           <img className="-mt-[30%]" src={react} alt="react"></img>
           <img className="-mt-[30%]" src={node} alt="node"></img>
         </div>
-        <div classname="skills3">
+        <div className="skills3">
           <img className="" src={vsCode} alt="vsCode"></img>
           <img className="-mt-[30%]" src={redux} alt="redux"></img>
           <img className="-mt-[30%]" src={figma} alt="figma"></img>
