@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { websiteContext } from "../contexts/webSiteContext.js";
 import data from "../data/data";
 import Rectangle41 from "../assets/Rectangle41.png";
+import Rectangle42 from "../assets/Rectangle42.png";
 
 export default function Projects() {
   const { language, setLanguage, darkModeHandler, darkMode } =
@@ -50,8 +51,8 @@ export default function Projects() {
         <div className="projects2 flex ">
           <img
             className="projects2-left"
-            src={Rectangle41}
-            alt="Rectangle41"
+            src={Rectangle42}
+            alt="Rectangle42"
           ></img>
           <div className="projects2-right flex flex-col justify-center px-8 gap-6 text-white bg-white dark:bg-B27272">
             <p className="text-2xl font-bold text-purple dark:text-C1BAED">
