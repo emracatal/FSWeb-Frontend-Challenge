@@ -6,7 +6,6 @@ import githubdark from "../assets/githubdark.png";
 import heroright from "../assets/heroright.png";
 import { websiteContext } from "../contexts/webSiteContext.js";
 import data from "../data/data";
-import axios from "axios";
 
 export default function Header() {
   const { language, languageHandler, darkModeHandler, darkMode } =
