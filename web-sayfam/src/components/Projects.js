@@ -65,10 +65,10 @@ export default function Projects() {
                 react
               </button>
               <button className="rounded-full bg-purple dark:bg-softpurple text-white py-2 px-5 mr-2">
-                react
+                redux
               </button>
               <button className="rounded-full bg-purple dark:bg-softpurple text-white py-2 px-5 mr-2">
-                react
+                vercel
               </button>
             </div>
             <div className="links underline  text-black dark:text-green">

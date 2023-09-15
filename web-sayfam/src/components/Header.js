@@ -74,7 +74,10 @@ export default function Header() {
                 src={darkMode ? githubdark : github}
                 alt="github-light"
               ></img>
-              <p className="text-purple dark:text-white text-xl p-2">Github</p>
+              <p className="text-purple dark:text-white text-xl p-2">
+              <a href="https://github.com/emracatal">Github
+              </a>
+              </p>
             </button>
             <button className="bg-white dark:bg-whitedarkmode dark:border-solid dark:border-2 dark:border-white rounded flex p-2">
               <img
@@ -83,7 +86,8 @@ export default function Header() {
                 alt="LinkedinLight"
               ></img>
               <p className="text-purple dark:text-white  text-xl p-2">
-                Linkedin
+              <a href="https://www.linkedin.com/in/emra-%C3%A7atal-75ab79164">Linkedin
+              </a>
               </p>
             </button>
           </div>
